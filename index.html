@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Principal</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Marketing</title>
     <link rel="icon" href="assets/img/m_d.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" build/styles>
 </head>
 <body>
     <!--Barra de navegación-->
-    <div class="navbar-fixed">
+    <div class="barra">
         <nav>
             <div class="nav-wrapper light-blue darken-3">
-                <a href="?" class="brand-logo center logo active"><img class="circle responsive-img" src="../assets/img/m_d.png"></a>
+                <a href="?" class="center brand-logo logo active"><img class="circle responsive-img" src="../assets/img/m_d.png"></a>
+                <a href="" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="pag/seo.html">SEO</a></li>
                     <li><a href="pag/sem.html">SEM</a></li>
+                    <li><a href="pag/monetizacion.html">MONETIZACIÓN</a></li>
+                    <li><a href="pag/social.html">SOCIAL MEDIA</a></li>
                 </ul>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <ul class="side-nav light-blue darken-3 text-white" id="mobile">
+                    <li><a href="pag/seo.html">SEO</a></li>
+                    <li><a href="pag/sem.html">SEM</a></li>
                     <li><a href="pag/monetizacion.html">MONETIZACIÓN</a></li>
                     <li><a href="pag/social.html">SOCIAL MEDIA</a></li>
                 </ul>
@@ -33,23 +39,25 @@
         </div>
         <div class="section white">
             <div class="row container">
-                <h2 class="header center-align">MARKETING DIGITAL</h2>
-                <h4 class="grey-text text-darken-3 lighten-3">
+                <h4 class="header center-align">MARKETING DIGITAL</h4>
+                <h5 class="grey-text text-darken-3 lighten-3">
                     Aquí podras encontrar toda la información necesaria, de
                     técnicas y recursos para ayudarte a generar oportunidades comerciales. <br><br>
                     Acontnuación encontrarás las técnicas más reconocidas: 
-                </h4>
+                </h5>
             </div>
         </div>
         <div class="row valign-wrapper">
             <article class="light-blue darken-1">
                 <!--Tarjetas-->
                 <div class="col s12 m6 l3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="responsive-img" src="assets/img/seo.png">
-                            <span class="card-title titulo"><b>SEO</b></span>
-                        </div>
+                    <div class="card hoverable">
+                        <a href="pag/seo.html">
+                            <div class="card-image">
+                                <img class="responsive-img" src="assets/img/seo.png">
+                                <span class="card-title titulo"><b>SEO</b></span>
+                            </div>
+                        </a>
                         <div class="card-content">
                             <p>
                                 El posicionamiento en buscadores, optimización en motores de búsqueda u optimización 
@@ -64,57 +72,63 @@
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
-                    <div class="card">
-                    <div class="card-image">
-                        <img class="responsive-img" src="assets/img/sem.jpg">
-                        <span class="card-title titulo"><b>SEM</b></span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            SEM es el acrónimo de Search Engine Marketing. Cuando hablamos de SEM normalmente 
-                            nos referimos a campañas de anuncios de pago en buscadores aunque realmente, siendo 
-                            puristas, el SEM se refiere a cualquier acción de Marketing dentro de los buscadores.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text text-darken-2" href="pag/sem.html">Más Información</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l3">
-                    <div class="card">
-                    <div class="card-image">
-                        <img class="responsive-img" src="assets/img/monetiz.png">
-                        <span class="card-title titulo"><b>MONETIZACIÓN</b></span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            El concepto de monetización se refiere a la forma en que obtienes ingresos por la actividad 
-                            que desarrollas en Internet, puede ser por utilizar las redes sociales, por escribir un blog 
-                            no importa el tema o porque simplemente estás en Internet. La publicidad es el metodo mas.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text text-darken-2" href="pag/monetizacion.html">Más Información</a>
-                    </div>
+                    <div class="card hoverable">
+                        <a href="pag/sem.html">
+                            <div class="card-image">
+                                <img class="responsive-img" src="assets/img/sem.jpg">
+                                <span class="card-title titulo"><b>SEM</b></span>
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <p>
+                                SEM es el acrónimo de Search Engine Marketing. Cuando hablamos de SEM normalmente 
+                                nos referimos a campañas de anuncios de pago en buscadores aunque realmente, siendo 
+                                puristas, el SEM se refiere a cualquier acción de Marketing dentro de los buscadores.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="blue-text text-darken-2" href="pag/sem.html">Más Información</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
-                    <div class="card">
-                    <div class="card-image">
-                        <img class="responsive-img" src="assets/img/socialmedia.jpg">
-                        <span class="card-title titulo"><b>SOCIAL MEDIA</b></span>
+                    <div class="card hoverable">
+                        <a href="pag/monetizacion.html">
+                            <div class="card-image">
+                                <img class="responsive-img" src="assets/img/monetiz.png">
+                                <span class="card-title titulo"><b>MONETIZACIÓN</b></span>
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <p>
+                                El concepto de monetización se refiere a la forma en que obtienes ingresos por la actividad 
+                                que desarrollas en Internet, puede ser por utilizar las redes sociales, por escribir un blog 
+                                no importa el tema o porque simplemente estás en Internet. La publicidad es el metod
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="blue-text text-darken-2" href="pag/monetizacion.html">Más Información</a>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p>
-                            Social Media es un término usado ampliamente para mencionar los sitios que proveen acciones sociales 
-                            radicalmente diferentes a como se realizaban a inicios de Internet.
-                            Por ejemplo, Twitter es un sitio social diseñado para dejar a las personas compartir mensajes cortos.
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <a class="blue-text text-darken-2" href="pag/social.html">Más Información</a>
-                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <a href="pag/social.html">
+                            <div class="card-image">
+                                <img class="responsive-img" src="assets/img/socialmedia.jpg">
+                                <span class="card-title titulo"><b>SOCIAL MEDIA</b></span>
+                            </div>
+                        </a>
+                        <div class="card-content">
+                            <p>
+                                Social Media es un término usado ampliamente para mencionar los sitios que proveen acciones sociales 
+                                radicalmente diferentes a como se realizaban a inicios de Internet.
+                                Por ejemplo, Twitter es un sitio social diseñado para dejar a las personas compartir mensajes cortos.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="blue-text text-darken-2" href="pag/social.html">Más Información</a>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -127,15 +141,51 @@
     <footer class="page-footer  light-blue darken-3">
         <div class="container">
             <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">DIGITAL BUSINESS</h5>
-            </div>
+                <div class="col l6 s6">
+                    <h5 class="white-text">WORLD-MARKETING</h5>
+                    <p class="grey-text text-lighten-4"></p>
+                </div>
+                <div class="col l1 s1 offset-l4">
+                    <ul id="redes">
+                        <li class="hoverable">
+                            <a class="grey-text text-lighten-3 responsive-img" href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-3x" style="color:blue;" ></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="hoverable">
+                            <a class="grey-text text-lighten-3 responsive-img" href="https://plus.google.com/u/0/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-3x" style="color:red;"></i>
+                                    <i class="fa fa-google-plus fa-stack-1x fa-fw" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="hoverable">
+                            <a class="grey-text text-lighten-3 responsive-img" href="#!">
+                                <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x fa-3x" style="color: green;"></i>
+                                    <i class="fa fa-whatsapp fa-stack-1x" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="hoverable">
+                            <a class="grey-text text-lighten-3 responsive-img" href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-3x" style="color:#55acee;"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-fw" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © RasFaiO
-                <p class="grey-text text-lighten-4 right">10/2017</p>
+                RasFaiO © 10/2017
             </div>
         </div>
     </footer>
